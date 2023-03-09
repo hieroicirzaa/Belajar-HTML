@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script>
+
+</script>
+</head>
+<body>
+  
+   <table style="margin-left: 10px;" >
+        <tr>
+          <td><img height="40px" width="40px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADMzMzw8PCwsLBvb28qKiqTk5P4+PisrKydnZ1bW1vFxcXY2NiMjIx7e3u2trY3NzdCQkJNTU2mpqbe3t4iIiLPz89ISEhWVla6uro9PT3y8vLl5eV2dnYSEhKsb8XkAAAA/klEQVR4nO3bW07DMBBAUZMUSB8k5VFKm0D3v0tYQC3xMdIYes4OrjySf2ZKAQAAAAAAAAAAAADg73ka79szreIC93dteo4KXLJLqsagwl12SNVLUGGXHVL1GlRYskOq3qIKD+/ZKddNUYGlDMeuQYe4QAAAAAAAAAAAAAC4Mf36sT2bLi6w1WX9bVTgkF1StQkqbPei5EPhL/3/KW32EU9RgaUs+1WDAn8LAAAAAAAAAAAAALgx59NDe+ZpCQscsxe6a/qgwM/skKqvoMJzdkjVHFR4zA6pCjtHmLNLanZRhf02O+Wqyzoq8MfSN2gIDAQAAAAAAAAAAAAAaMU3FnQd+0IAHb0AAAAASUVORK5CYII=" alt=""></td>
+          <!-- <td><img style="margin-right: 3px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShBIPsaRauXAs2mIoVYg7010y0b4C8-BIIS2WCD4c7wg&s" alt="" width="30px" height="30px"></td> -->
+          <td><img style="margin-right: 444px; margin-left: 10px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiP2lWnjtqMxQoFQb-rnyb4EaLcgmLqSd_Qr7Pci5icFLD7jH9o1WCfYQ4_BBqwuSY95s&usqp=CAU" alt="" width="120px" height="55px"></td>
+          <td><nav class="navbar bg-light">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Telusuri" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"> <img height="30px" width="30px" src="data:image/png;base64,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" alt=""> </button>
+                <button style="margin-left: 10px; margin-right: 400px;" class="btn btn-outline-success" type="submit"> <img  height="20px" width="20px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAY1BMVEX///8AAADPz89SUlLq6uqurq78/PyDg4Pw8PCNjY3m5uYuLi709PTf39/39/d5eXljY2NCQkLZ2dltbW29vb2VlZVLS0ujo6M2NjYNDQ0kJCSbm5tzc3MWFhY8PDxaWlodHR1exeAmAAADPElEQVRoge2ba7eqIBCGRQXvl9SyrLT//yv3EkEpTXGE1jlr8X6StvIIDpeZYVuWkZFRL/J7ZFF7ZXfJswAnv4PaGRL08uyfUKsr+tS10k4tTjNqr1OhF3tfpPa6a6SSx1csQg9t5p3mK1iE8lQPdrW1GlscbGARCnRgq00sQhrGUxxJcKNYOXe7l7X0dPiU4j5DxdyzFBahs1osmU/Ky4rUDmJbEouQ2sVJtptVW9ZFmntSyr1Jc28qJ0tfGouQypFU7OCq3AHIm7NagzZcwzVcwzVcwzVcwzVcw/1/uEmQ1TGQG9dZAAyZUljrg7h+C246GXyxEsQt6SXIR2OsNgVw01Z4h51ivljkA7g+CzpBfLRkeLRxrf3+YPgariGW5Q6Pvnp/NtzB7d8zuU3XexUL7092+Pv9s/y7QMJ3hH0jGnNcjrIvicY3WCwzAmAtqxsepgEauShhr7NwewfiekIDdsavWPd4IC7rLBpyJDLR2F5RP1WEzBxgYWEexMF9QTZwRtMbmBV8ENdig5B2tCsZj6Ujh3XzC4YdjakQC+uiRliIBYDYjDUsDb5MRPZKe7ZkJXDqkI9aGoKTzi/wyQ0eqeSonJZk8yk8y3QgydGIVZDyG4+pJOLLNnCsVfMq3beWLGvoFZcX6wPcMbzvDOW1FpfDLQ4rXg/Fg+2PWusv0LF5Yy7v4LZybCGbaxNnkeqwMePxH7JjWGHY8pqqecz/wkyXjAn49nDibFqJcjbdEttrBWjr2exT+pPdKXAa8FhZNNYWJzh4dF33CHAytsye1ix8HPu2FHnfs1KpN92mKGkmHJuI8DI5xcICfdSmRglNQdF5njAJz+K2QBn28xiDc7enSYHY9fvQUpqZnC1GTZ4FQZDlzecfFKe8XblM3QWyU18Vwds7nSfWcaLB9TawnvLGMiXZCjXTeSIqrJe/86VWndifqcB5I7pptybHmk8jccWJzRfi2k7Un9lYEXcmgC4BWHwbpcuEDddwDddwDRem364LaYWZxnWQ/1BpOqXaKxH9sU+12vY5ZH0ve9HFTVaxB+JVG9qK9uvaZcUbXG0bLbyKVeJsL8sunW8q9f43AfkmrVQjo39bf+cFJekOPtr4AAAAAElFTkSuQmCC" alt=""> </button>
+              </form>
+            </div>
+          </nav>
+          </td>
+          <td ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL4--lb1hC3KV_JeNpXSzJbRR9evf918c-r00iEi3B87o2QiVDr5gp7i6X3f0ZD4CQGI8&usqp=CAU" alt="" width="30px" height="30px"></td>
+          <td ><img style="margin-left: 15px;"  src="https://cdn-icons-png.flaticon.com/512/1182/1182769.png" alt="" width="30px" height="30px"></td>
+          <td ><img style="margin-left: 12px;"  src="images/profil.jpeg" alt="" width="40px" height="38px"></td>
+        </tr>
+      </table>
+      <hr>
+  <nav class="container">
+      
+  <div>
+     
+      <Video autoplay controls style="width: 962px ;  ">
+        <source  src="imagination.mp4" type="Video/mp4" >
+    </Video>
+    <table style="margin-bottom: -7px;" border="0">
+      <tr>
+        <td><h4 style=" margin-bottom: 1px;">Imagination - Shawn Mendes (Lyrics video dan terjemahan)</h4></td>
+      </tr>
+      <tr>
+        <td><p>46.343.381 x ditonton  5 Nov 2019</p></td>
+      </tr>
+    </table>
+    
+    <table >
+      <tr>
+          <td width="px"></td> 
+          <td width="50px" height="50px"><img style="margin-top: -10px;" src="images/der.jpeg" alt="PP" width="100%" height="100%"></td>
+          <td width="7px"></td>
+          <td width="120px">
+              <p><b >DeLirik</b> <br> 4,3 jt subscriber</p> 
+          </td>
+          <td><button style="background-color: red; color:white; width: 110px; height: 130%; margin-top: -7px; margin-left:179px">SUBSCRIBE</button></td>
+          <td style="font-family:Arial, Helvetica, sans-serif; ;"><h5 style="margin-left: 100px;">👍🏻</h5></td>
+        <td ><h6 style="margin-left: 5px; margin-top: 7px; margin-right: 20px;">289 rb</h6></td>
+        <td style="font-family:Arial, Helvetica, sans-serif; ;"><h5 style=" margin-top: 7px;">👎🏻</h5></td>
+        <td ><h6 style="margin-left: 5px; margin-top: 7px; margin-right: 15px;">Tidak suka</h6></td>
+        <td ><img height="40px" width="40px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAMAAAD1LOYpAAAAY1BMVEX///8AAACRkZG2trZzc3P4+PicnJz7+/vOzs5+fn6pqanw8PDz8/OhoaEfHx/JyckVFRXDw8NTU1PX19deXl5OTk4JCQlGRkbo6Ohubm5BQUEyMjLe3t6KioolJSVjY2M6OjqWEP6bAAAEjUlEQVR4nO2b6ZaqMBCEg0FEQGUHgajv/5RXsxFwYZRGc87t7+eMZso01akkDiEIgiAIgiAIgiAIgiAIgiAIgkzhp2f/1xpe45eO49it0bsqdPaHX8t4xcrh2KxRStxbXGsp0XGSXyt5ipZor2d6iSdbn0cuMba61lwiy7nE2M5ac4k7UnCNpZXzyCV6JEzt9YyUSOpKeMZCjUoiIY2tnukl1qLWpXXz2EskkfBMbNs8GhJJlFqZKUyJpG5s9MxAIiGVhZ4ZSawt7I8jiSQUnrEph7ORRLIurPLMmm7bsUS1zliQw9cdTVVU9Ia/KazwTOe5pQ6zTjD8pQWZYk3T1jHYb0YvkJ75VQ6vk6Mpz7m4u/XdizbV7zzTsXQwfyzpHr6uluv1t2sdJpUpr2KP5XGiX+TwzjMfwNybKOL3PdMdTYEsiybf8d0cHiXGE9hu/1q8L+Zweu4FFsGLB3CE9MziOTxK+gqfjtm4Bb5+7zdy+Jo2WmDq1e++/Qs5/NA/gy0NPxhg6RzuF0pfnH/8N5bM4TXTM3icUagFc7i31136PY+MWSqH90udO3voRXJ4tFUCL8msGRQskMNprARSmAGhc3itp/D9PvgMlSkykNGSk3LJ31e6aaRnzhBDbYFrrNiJBWo6IE3RKSMzsBoLArEZW80fSPqkhe5hnlwC5o6jW83qk9X4FYEYd3u/D3uPOpfrMfBTqBW6c1usr9Zj6CnUczh3HCoPF1Zzi3EHVJXVnS18ZtrBOCWSuauA6f4mag7nPofyCCSf31jHADlFbTAYjCqTHYxTIrkFDQBi1wgop8gtHng3hHOKvEpeYBsJ1Q+lUxbY/EBVWSg8wTcbKKeoBGLxHAaLKZRz6M4d5/BHp4Sdf6DByj3nl9NtKS/3TXp0VwE9ZPXjTgXllK6d7jbrLGBu3hgXGAPawmX0PqBDVVnueJ5l9U1Y0237TNuAfPRWqIxNXPFJH1cqo6x6IWrEbvBeqDmUAzWPFGZsePUziXs/8PyMTXy+XT7dRezQZ3cK4svVHcy7uqOrwzAKw7rLDoF3fUir/Z1EqH5IxNeTyrFVsuHNz+1DbHfU755sFqJafCBDIliVZcoeWiUKqtgQV7YFO4RTf4oOJQIlhys+15IOfrQy9cVn728Hx0OJUBn72u14RCyNlTnJ94bAlHZ/DeADicopAFs0UQ59i1xTQ9/l+FZyNCXCOYVEYqpkNaKg6AXmb9z8jCXCOYUQcTAi1q01PWl9p2339vC9RDinXI3By8q/zxDRvkefd59sALVEqOTA4ZPY3CYxyXuHHD7boSqJkFUmGR/r6olMCzydPz6RlRIBnXKFN5wLCZlOMdsZmVZIpJBzSDLeoZPkok086+aHi9vHcE4h8klsdY3PM3entG9YQFUmdd9jblKTuaXpJQJVWTtPuOTBN2zeRUucvZPSGJPoQuyeKfQckrpX6IMcM0mJR7gzK/WPFSXUgTEFdcoN6eQG7MA4K0GrrL/ywQCHpJcWcg7FFreBPUrcAN8xbHYVA79YQRAEQRAEQRAEQRAEQRAEQZD/mX8ZUjABaEZ+zQAAAABJRU5ErkJggg==" alt=""></td>
+        <td ><h6 style="margin-left: 5px; margin-top: 7px; margin-right:15px ;">Bagikan</h6></td>
+        <td ><img height="40px" width="40px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAARVBMVEX///8AAADv7+/MzMxdXV36+vrz8/NERESRkZH29vbq6urFxcVvb28dHR2UlJQ8PDyvr6+np6e8vLwSEhIKCgp2dnbT09Ppy7W1AAAAuElEQVRoge3UyQrDIBRA0Txj5nn8/09tIakW1JZkUSncs73IQxySBAAAAAAAAAAAAH8hUyr/kPMvVWV3B4+FiGx1oKb6WXUaqPW2ihTjvcGtHHZvnc46eet+1vbO4FJeKk9NTfXtujK1vD647szq3pO1qdpTe1O70GGFNWaxDG7NbRXPNRtsbS5Pnu3ixa3qbbJy82LrfHlyvD3HO+d4dzviez7+sDXGHxbx3wYAAAAAAAAAAMBvPQDvwwUZm40K1QAAAABJRU5ErkJggg==" alt=""></td>
+      </tr>   
+    </table>
+   
+    <table>
+      <tr>
+      <td style="font-family:Arial, Helvetica, sans-serif;"> Lirik lagu dan terjemahan bahasa indonesia. <br>
+        🎵 Judul : Imagination <br>
+        🎙️ Penyanyi : Shawn Mendes <br> <br>
+        
+        Jangan lupa untuk subscribe channel DeLirik, like dan share video ini ke teman-teman kamu ya. Kira-kira lagu apa lagi nih yang mau dibuat lirik videonya? tulis komentar kamu di bawah ya. <br> <br>
+        
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br>
+        The coolest Shawn Mendes merch is at https://unrivaledmerch.com/shawn-mend... with FREE Worldwide Shipping - Use code "delirik" to get 18% Discount !! <br> <br>
+        
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  <br>
+        Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. <br> <br>
+        
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - <br>
+        We do not intend to infringe any artist's or label's copyrights. If you want to remove a song that you own on my channel, please e-mail me and I will respond within 24 hours or less. <br> <br>
+        
+        For copyright : delirik96@gmail.com <br> <br>
+        
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  <br>
+        Lirik: <br> <br>
+        
+        Oh there she goes again, every morning is the same <br>
+        Oh dia mulai lagi, setiap pagi selalu begitu <br>
+        You walk on by my house, I wanna call out your name <br>
+        Kau berjalan melewati rumahku, aku ingin memanggil namamu <br>
+        I wanna tell you how beautiful you are from where I'm standing <br>
+        Aku ingin memberitahumu betapa cantiknya dirimu dari tempatku berdiri <br>
+        You've got me thinking what we could be, cause <br>
+        Kau membuatku berpikir kita bisa menjadi seperti apa, karena <br> <br>
+        
+        -----@@----- <br>
+        I keep craving, craving, you don't know it but it's true <br>
+        Aku terus mendamba, mendamba, kau tidak tahu tapi itu sungguh <br>
+        Can't get my mouth to say the words they wanna say to you<br>
+        Tak bisa membuat mulutku mengucapkan kata-kata yang ingin kukatakan padamu<br>
+        This is typical of love, I can't wait anymore, I won't wait<br>
+        Inilah ciri-ciri cinta, aku tak bisa menunggu lagi, aku tak mau menunggu<br>
+        I need to tell you how I feel when I see us together forever<br>
+        Aku harus memberitahumu perasaanku saat kulihat kita bersama selamanya<br>
+        ------------<br><br>
+        
+        -----REFF-----<br>
+        In my dreams you're with me, we'll be everything I want us to be<br>
+        Di dalam mimpiku, kau bersamaku, kita akan menjadi apapun yang aku mau<br>
+        And from there, who knows<br>
+        Dan dari sana, siapa tahu<br>
+        Maybe this will be the night that we kiss for the first time<br>
+        Mungkin ini akan menjadi malam pertama kali kita berciuman<br>
+        Or is that just me and my imagination<br>
+        Atau itu hanya aku dan khayalanku<br>
+        --------------<br><br>
+        
+        We walk, we laugh, we spend our time walking by the ocean side<br>
+        Kita berjalan, kita tertawa, kita habiskan waktu berjalan di tepi pantai<br>
+        Our hands are gently intertwined, a feeling I just can't describe<br>
+        Tangan kita saling bergandengan, perasaan yang tak bisa aku jelaskan<br>
+        And all this time we spend alone, thinking we could not belong<br>
+        Dan seluruh waktu yang kita habiskan sendirian, berpikir kita tak bisa memiliki<br>
+        To something so damn beautiful, so damn beautiful<br>
+        Sesuatu yang begitu sangat indah, begitu sangat indah<br><br>
+        
+        Repeat @@<br>
+        Repeat REFF<br><br>
+        
+        Whoaa.. Whoaa.. Whoaa..<br>
+        Imagination.. Imagination..<br><br>
+        
+        Repeat REFF<br><br>
+        
+        I keep craving, craving, you don't know it but it's true<br>
+        Aku terus mendamba, mendamba, kau tidak tahu tapi itu sungguh<br>
+        Can't get my mouth to say the words they wanna say to you<br>
+        Tak bisa membuat mulutku mengucapkan kata-kata yang ingin kukatakan padamu<br>
+      </tr>
+    </table>
+    </div>
+    <div style="width: 100vh; margin-left: 20px;">
+      <table style="margin-top:10px;" >
+        <tr>
+          <td >
+            <a href="#" style="color: white; background-color: black; border: black;">Semua</a>
+          </td>
+          <td><a href="#">Dari&nbsp;penelusuran&nbsp;Anda</a></td>
+          <td><a href="#">Ditonton</a></td>
+          <td><a href="#">Terkait</a></td>
+          <td style=""><a href="#">Baru&nbsp;diaplod</a></td>
+        </tr>
+      </table>
+      <table style="margin-top: 20px;" >
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g1.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -35px; "><b>Ed Sheeran - Perfect (Lyrics)</b><br>Jouzka<br> 1.232.156 x ditonton  2 Jul 2022 </div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g2.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -20px;"><b>Video Mix-Imagination- <br> Shawn Mendes(Lyrics video ...</b> <br>Delirik,Shawn Mendes,Justin Bieber,<br> dan lainnya</div></td>
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g3.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -15px; "><b>Shawn Mendes-Treat You<br>Better(Lyrics)|Justin Bieber,...</b><br>relax & have fun<br>2,7 jt x ditonton • 2 bulan yang lalu</div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g4.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -20px; "><b>Love Yourself(Lyrics)-Justin<br>Biebe,Ed Sheeran,Charlie ...</b><br>Ladies <br>452 rb x ditonton. <br>3 minggu yang lalu</div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g5.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -17px; "><b>Keisya Levronka-Tak Ingin Usai <br>(lyrics)</b><br>MILirik <br>4,1 jt x ditonton. 2 bulan yang lalu</div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g6.png" alt="1" width="190px"></td>
+          <td style="font-size: 14px; " ><div style="margin-left:10px; margin-top:-3px; "><b>Maroon 5-Girls Like You<br>(Lyrics) ZAYN&Sia-Dusk Til ...</b> <br>Toonies<br>208 rb x ditonton. <br>2 minggu yang lalu</div></td>      
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g7.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -35px; "><b>NIDJI-Laskar Pelangi(Lyrics)</b> <br>Unique Clouds<br>7,7 jt x ditonton • 2 tahun yang lalu </div></td>
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g1.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -35px; "><b>Ed Sheeran - Perfect (Lyrics)</b><br>Jouzka<br> 1.232.156 x ditonton  2 Jul 2022 </div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g2.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -20px;"><b>Video Mix-Imagination- <br> Shawn Mendes(Lyrics video ...</b> <br>Delirik,Shawn Mendes,Justin Bieber,<br> dan lainnya</div></td>
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g3.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -15px; "><b>Shawn Mendes-Treat You<br>Better(Lyrics)|Justin Bieber,...</b><br>relax & have fun<br>2,7 jt x ditonton • 2 bulan yang lalu</div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g4.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -20px; "><b>Love Yourself(Lyrics)-Justin<br>Biebe,Ed Sheeran,Charlie ...</b><br>Ladies <br>452 rb x ditonton. <br>3 minggu yang lalu</div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g5.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -17px; "><b>Keisya Levronka-Tak Ingin Usai <br>(lyrics)</b><br>MILirik <br>4,1 jt x ditonton. 2 bulan yang lalu</div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g6.png" alt="1" width="190px"></td>
+          <td style="font-size: 14px; " ><div style="margin-left:10px; margin-top:-3px; "><b>Maroon 5-Girls Like You<br>(Lyrics) ZAYN&Sia-Dusk Til ...</b> <br>Toonies<br>208 rb x ditonton. <br>2 minggu yang lalu</div></td>      
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g7.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -35px; "><b>NIDJI-Laskar Pelangi(Lyrics)</b> <br>Unique Clouds<br>7,7 jt x ditonton • 2 tahun yang lalu </div></td>
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g1.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -35px; "><b>Ed Sheeran - Perfect (Lyrics)</b><br>Jouzka<br> 1.232.156 x ditonton  2 Jul 2022 </div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g2.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -20px;"><b>Video Mix-Imagination- <br> Shawn Mendes(Lyrics video ...</b> <br>Delirik,Shawn Mendes,Justin Bieber,<br> dan lainnya</div></td>
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g3.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -15px; "><b>Shawn Mendes-Treat You<br>Better(Lyrics)|Justin Bieber,...</b><br>relax & have fun<br>2,7 jt x ditonton • 2 bulan yang lalu</div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g4.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -20px; "><b>Love Yourself(Lyrics)-Justin<br>Biebe,Ed Sheeran,Charlie ...</b><br>Ladies <br>452 rb x ditonton. <br>3 minggu yang lalu</div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g5.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -17px; "><b>Keisya Levronka-Tak Ingin Usai <br>(lyrics)</b><br>MILirik <br>4,1 jt x ditonton. 2 bulan yang lalu</div></td>   
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g6.png" alt="1" width="190px"></td>
+          <td style="font-size: 14px; " ><div style="margin-left:10px; margin-top:-3px; "><b>Maroon 5-Girls Like You<br>(Lyrics) ZAYN&Sia-Dusk Til ...</b> <br>Toonies<br>208 rb x ditonton. <br>2 minggu yang lalu</div></td>      
+        </tr>
+        <tr >
+          <td><img style="margin-bottom: 8px;" src="images/g7.png" alt="1" width="190px"></td>
+          <td style="font-size: 15px; " ><div style="margin-left:10px; margin-top: -35px; "><b>NIDJI-Laskar Pelangi(Lyrics)</b> <br>Unique Clouds<br>7,7 jt x ditonton • 2 tahun yang lalu </div></td>
+        </tr>
+      </table>
+    </div>
+  </nav>
+</body>
+</html>

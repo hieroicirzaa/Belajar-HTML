@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Spotify</title>
+    <style>
+      div.progress{height:3px;}
+.volume-progress{width:100px;}
+.play-icons{    margin-top: 2px;}
+audio{width: 1050px;}
+    </style>
+  </head>
+  <body >
+  
+    
+    <aside class="sidebar" style="background-color: black;">
+      <div class="toggle">
+        <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+              <span></span>
+            </a>
+      </div>
+      <div class="side-inner">
+
+        <div class="logo-wrap">
+          <div class="logo">
+            <img src="data:image/png;base64,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" alt="" height="100%" width="100%">
+          </div>
+          <span class="logo-text" style="color: white;">Spotify</span>
+        </div>
+          
+        <div class="search-form">
+          <form action="#">
+            <span class="wrap-icon">
+              <span class="icon-search2"></span>
+            </span>
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li class="active"><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-home2 mr-3"></span><span class="menu-text">Home</span></a></li>
+            <!-- <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-videocam mr-3"></span><span class="menu-text">Videos</span></a></li> -->
+            <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-book mr-3"></span><span class="menu-text">Play List</span></a></li>
+            <!-- <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-shopping-cart mr-3"></span><span class="menu-text">Store</span></a></li>
+            <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-pie-chart mr-3"></span><span class="menu-text">Analytics</span></a></li> -->
+            <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-cog mr-3"></span><span class="menu-text">Settings</span></a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </aside>
+    <main style="background-color: rgb(46, 46, 46); height: 1000px;">
+      <div class="site-section">
+        <div class="container">
+          <div class="row justify-content-center" style="color: white;">
+            <div class="col-md-50">
+              <div class="row">              
+                <!-- content -->
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/alanWalker.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3 >Alan Walker, Alesso, Sorana, dan lainnya</h3>
+                      <div class="post-meta">Alan Walker</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFRUYGBgYGBgYGBoYGBgYGBgYGBgZGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQrISs0NDQ1NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQIEBQMGB//EADgQAAICAAQDBgQGAQMFAQAAAAABAhEDEiExBAVBBlFhcYGRIjKhsRNCUsHR8BQzcvFigpKy4SP/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAjEQEBAQEAAgIDAQADAQAAAAAAAQIRAyESMTJBUQQiYXET/9oADAMBAAIRAxEAPwD2YWAHI2MLEAA7BsQAANMiNAEhiGgI0AABGKwZ5Ptj2heClh4TvElFypauMf1SXRVe/cBtXnfPcPhoZp2+lR1fl4ep5l9v5NOSwYxV0s0/vS+x43hs/EzqU7k7blOXwxS3dt+iXii5xnDcNnySag6WWeFOWJB6bTTtxfkafGT1S7/HsuU9u8LElkxY/hSezbuEv++lT81Xieship007T6o+FY0YR+WWdd7TVPrvutNDX5H2gnw/wALk3hv8tv4P9umi70g1j9wpr+vrzkDZ8+fbicpwjhYSSdfPNK3etN6JeZr4fa/C+JT+CcXTjKm34xlC1JeRFzYuWPT2JswcHtPwsoOX48VW62n6Qat+iZ25HzOWLhpzjJSVptxy2r+GVdLi4v1JsDTkznOZJyKXFY1JiNnc24ukzx/E4lts0ea8VboxpyKzE6qEpHOTJSZzbNIkWAgGH22goYGSioKCwAyoKHYgABBYAEkiSRFMkmBGkOgs5fjxurXv3aP9wDL7R85hw2Hmk/ilahHq3Xd3LvPkHH8yniSnKT+KbubV6rpDf5Vv49TX7ccwWLxPwzzUsu9xi8z+GPkstvvs8yzbGfXU6v6DGmRJJGrMJWSUH3r3CMtddvA6Tx9MsVlT3p76fbURuM5agmOUK337lv69xECdsLGcdV6daPRci5xOM8qxKbVXiTywtO1fwut33HmExuTrd+ROsSrmrH1Ll/NM8M88qkpZJqE/ladJuK6N9be/cceacZuk9jwnK+YzhmjmqM40100WmjNafGZ0pXbaVvxMNY5Wk12OfETtlaZ0nI5SZUShIixtkWxwiAAGH24BDMlgAEAAhiaJABAMDNDEhlE48bjuEcyjmSazJK3l/M0urW9da01Pl/aXGxcGUnDGz4GK3KEoTTq1ThJrWLSSXikup9H5pxs4QvDipvu1v2R8n7VcVOeLeJhww50m4xSUtes66+euxWJ2p16jEzCYCOlkCTkRAAaG409q+4Jqn39CzhQUbbq0vq/4Fbw5Ou+HCcIWlSa70nJdavfyM+crdk8aS6O317vTv8AM5CkFoGICidcCDlJLv0XmXeFxMrVqls6un5lCMu4sYWG5LZvTp0dr/j2I1FxpWmc5M5YWaNroq+rpnQz4pFkWNiGQoBAMPt40RTHZiswEAAwEFkgDREACQ7I2RnLR33dNwDxvaftJHCnOMHU1S0k9ZeMacfXfSj5vxPESnJznJylJ2292zT7T8Lkx5uKlllOTjnu9Xqm3vTMY6fHmSdZ6t7wwExs0QQAABPAhmlFd7Xt1JwxabdJ30e25Dh5VOL8V/AttHo1fuIznCqbpXqkt0vLoQJpXb++7YSi1/NASBJR0v8At931EWo/Iu5vXfdVqvSQWnIqx3LqnLDdXWkZRarrra+pVhBu6XVL1b/+F7DwIzTzN3GlV3LLFa5fe60WgtWKiPDYjk9dW3b9v3f2LDOeE4q8qpXpbtteJJszv2cDEDYmwB0BGwGH20aCh0c7QgHQUBEA6E0BgEAIAB0JBIA+Ldp8Sbx5wk28kpRV+er8b3Mc1e0OEoY84xemebWt6OTa1Mujqz+MZa+yGyUMNvy7ztPBSK6UlVgHIQ0gnKV6vfr4+JEcUI0RxO8uFllzbqr06eZyaTqv6w707mz7PDinS70/R61+xNyajlfSWvg6r7fY0sDl01hrEyJ1UotNZr+ZKcfzJrTTb6FHi8WM5ycVlUnaV3l7lm3aSJmpq+jubme3GL08pJ/f++p3wZtyTV23+V007VV9Pc4xSWnjr37FvF4TK45abbelrXXuC2CSuuJOEW4q7jfk/wCHuIhiKMpuk1T2bzNdGr8ydEKIRIQyRAYAH25MLMbH7R8PDaTl5L+SpPtbDpB+skv2MOtPjXpWxWeWl2u7oL1k3+xXxe1c3sox/viLp/GvYtg2eAxO0WI/zv0dfY4Pn8/1z/8AOQez+P8A2+itis+eR7R4q2nL1d/ct8N2qxF8zjLzVfVB7Lj3KZn894r8PAnPui9e7TqVOA7Q4c9JfA/NOPv0OnN+J4aeFOE8aCUl+peaegFyx8j4vEliSUpO20m3svLTY4QjqtOpp804GGHGLwseOKnmuouNU/H1M/AXxKzpl9ekWe1prLEoSmaHFszZoMjZCGI0ZAnGbRAlCDbpCpx1hjyjotLX0oh+Jrdba/UsT5dOOrW29PVFfEhVV676eYpc36XZqfbZ47ndwhhYdqMIRTm7jNyTTVV0TW3iZ3CYek50qind972XvRWUO8tzmoQcLTcnFvuVJ6ed/bxJ5MzkPt1e6ccHLq301Xj0a8N79CxwyzySvK1bTeydtptlKLt7eC/Y0kqVXdJK/Bf8sKWTm3nd6t7vx80JsCLJMWFiEMgAAAXZYzE8Zlb8Qi8cj4tfksPiDnPijhLGXcVpzKmCu1qXEsX+SU8wrL+MR86uS4pkHxL7ytYWHxhfKrK4qXec547fU5WIPjBdVdg6SOuFTuT79PYpSmdoTqIrFTR407KkjtKRxY8zidXpAAFIFG52V5asfGUJbf3uMZI9j2Ah/wDqn6+2pn5dcz6b+DMuvaj2swcSGJkikoLSOVU5bXKS9dDI4Pl2JiZmot5avTV3+lPc+q815PDHhHPHVKlJfMvCylwHIXB3ncktF0a/tswz5fjnkja+Oa1214zlvIYYksknJPw2+uz8GrM/j+ChHElGFuMXlt0ra0k9PGz6VzaccCE8SkpKOjrq9I/sfOZSH49a1bany5zJJI5xwYrZe+v3G0Nsi2aMAxDbItjICoLFYwKAMwAFaUyDmQbEXwrUnIViAZdOxMAAgAAMAAYIAdk1LQ5jTFTldCEiUWJgdQHFWIAS6pdD6N2K4XLCcktoM+cYO/fR9O7OcU44LUYSlnpJpN6Le3sl5nN57yR2f552Wt/huLWsfF/1nXE4lQT+h53AzZ5v/qYc15j+FBzevSK75PZeW7OWW/UdOvHme79MfthzHPKOGnt8UvN/Kva36o8zZPFm5ScpO22233tnM68Z+M44d6+WukxMYi0ExMdCoZEJhQUAAAABQAANUAAAQAAAyAAAGQxDAgSjB1ZE6wmKqnEExWOfeRAVJRvY6YEVmWdOuqW5Hh8TLJPuPbcuwsHioZJpZkvhml8Sfg/2MvJv4/c9NvF45r332rcJy3BlOE8KUct63pKvFPqe2wJqPw19jxMeTOE3BTlCaqszTjNd8ZNL++RtYC4iMoRnlcLpy/NS2utKOTfv313/AAkz9NdYdt11Zn874RYuG1HXKrg1ta6+NkOa8Y3JYWHu/na6J9PN/bzNqGDUIp1ajWhl7nuDU/4+/wBvlbYmzvx0UsSaWynKvdlc757jzr6vDbE2JiGk2yLYCYwLCxCGDsBAAUgADRmAAAAAKJQg5aJX1F05EQAAAAKJQiHRIiOCOiwybwmlfTb1F1czXMhJEpaEWwiaRo8n5i8KafQzgiw1manKeNXOux9WwlDicPWnJaxfVd68mZ/MuY/gxUIL42tF+lfqfj3Iz+yPHfDlT1Wj8Udud8IlxEZrabWbqlNJWvZp+p59zzXL+nq412T+Vp8g4TLHPPWUtW3q7ettmzxuKoQlJ7Ri37I44EFFRXgZPa7jMuDkW82l6LVkZny1xPkv7eInLM231bfu7IsGxNnfI86hoTQWKxkGKgsVgBQgsVjBgKwAKYABozAAAjB6jlHL1HDuS1mtfBdx5vh4OU4xW7Z7nDhUUu5Uc/8Ao3ySR1/5cS22sLieUQSeW78zlwWEoP4oJ+av2N2cA/xk19jCeW85XV/8M97FbAwMKc7UIUlXyrWTf7fuWOK4SEY1GCVqnSRDgsPLCP18+p0xMVk3V76aTM57UeC5bCErmsz3roVe087lCtElKktFuunsbMJxap/N08F+lr7P+rK7Q8JNwjiZXlg6k0m1FSaSbltvS9UaePVu5dMfNmTx2SPNsEAHa8xbwODlOLcFbjXwq3J+KRz4nBnCs8HC1pcMt+O2ouG4mUJKUXTX9o+h8k5jh8TBwnFStU4SV+q/kx3rWb3nY38eM7nJfbwvAY8oSjKElrpTvTz6H0fl+FnwYqTU2m521pme/j4f2jyvaHstLAqeFcsN6tPWUP5Xiei5FiPIo+C1MPNqaksdPhzqSy/prTe3gjxXa3is+KoLaEfq/wCo9dxPERjGU7VJXfkj5zxOK5zlN7ybZHgz3Xf4Xm1zPP64iZIR2ONFiJNCYBEGOgoYRAYgBUMAAKYABozAAFAF/kmHmxY+Gp66UtDG5HwmSOeW8vojWcjg82vlr09P/Pn449oOR0hOjlKZX4ji0lSM5m1vdyDiatuM2rd0qq+9LoQw4Xu5P1r7FSGPbLEZmlzZETUvtZzqKpUitj47lGULeWSppPR+a695zxMU45h5z+y1rvph4mG4tp9CJo81wayz79H6bf3wKOHhuW1euh15vZ15us81Yu8Fyx40W4NZlvF6X5P+SzyWc8HHSknB7NNFblfGPBnbWmzPQ4sVOWZO+sX4Mx8mrOy/VdHhzm8s+59vQ4vFykkpa2iEsSMMN9LtKlqVcGdpX00K3ETc7nvGPwQX6pvr+/kkckna6vJrk9K3OeOy4UcNPWdyl5Xp7nnWy7zid4sn/t9PhWhROzx55lw+TVt/8FisBFsxYrBioYFhYqCgAsLFQxkAFQwCoAAWhKEG3SRscv5fFVKer7uhQ4SZq4UzDyav1HV4c5+60ozFKfj5lSWKkrbozeM5g5aR0X1Zz58d1XTryzMXOL4tdPvoUlNvUpynsSjOjomJmOW+X5X2vQmdViFGOJ4kv8h9EK5aTySLjF/kRW3xPw29yvlb+Zt+HQeyD4Jvmv6VuN4qc3ldUnstivHEcdhrewlE1kknGFtvsZrN7lWPlST6beR55F7AxstdUT5M/KcX4tfHXa9i5ZoUtL3a3S8PEtcHhQajp8MLSXRy6v8Ab3MrgZ5o6Pc1eDgkkl0VHBr16ehJNe3kOZf6k/OvZIq2XeeV+POu9f8AqrKDO3H4x52/WqdisiwLSdisTAAdisQABYWAhkeYZEA4FZKyawJPaLNDhsNGlgyjFEa8vPqNs+Ga+6wsPBmvyv2On+Xl0rU0OP5morLDd9e4w5PqPPdTuoW+Y9ZrvicQ5bs5JEEdU0ty+c+mXe/bphcM5NJdS1PgVB07tb+ZZ5BLM5/DrSS8DrzTTEet6K/OjPVveHOKSwkug1FILFYjSohi/Kx2Qxn8LHApxGiNg3oWUqM3Zb4DCc24lI1eQTWfXuDd5m0/HPlqStTliyfCzX4bH8TLhbk306EuKxMmHJ9+nucNny09GX457/GNxM885S/VJv3ZyoVhZ2Scedb29FCoGxWMg0KgFYA6FQWFgQoKGKxgZRkbGBrHDFniPk9AAx19unP0w2AAdE+nJTiKW4AEKt7s3v6j5p/qS8xgZX8lRSYwADJHPH2YAOBTFLYYFl+kC/yn5/QAJ3+NV4vzjfw9ivzT/Tj/ALv2YwOPP5R3+T8Kx2IAOx55CYAAAmMAImAAMAYAAAAAB//Z" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Shawn Mendes - Imagination (Official Audio)</h3>
+                      <div class="post-meta">Shawn Mendes</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/armada.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Asal Kau Bahagia</h3>
+                      <div class="post-meta">Armada</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/chrisye.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Kala Cinta Menggoda</h3>
+                      <div class="post-meta">Chrisye</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/budiDoremi.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Mesin Waktu</h3>
+                      <div class="post-meta">Budi Doremi</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/menjagaHati.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Menjaga Hati</h3>
+                      <div class="post-meta">Yovie & Nuno</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/daunJatuh.png" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Resah Jadi Luka</h3>
+                      <div class="post-meta">Daun Jatuh</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/JustinBieber.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Love Yourself</h3>
+                      <div class="post-meta">Justin Bieber</div>
+                    </div>
+                  </div>
+                </div>    
+                
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/andmesh.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Cinta Luar Biasa</h3>
+                      <div class="post-meta">Andmesh</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/hasley.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Without Me</h3>
+                      <div class="post-meta">Hasley</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/keisya.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Tak Ingin Usai</h3>
+                      <div class="post-meta">Keisya Levronka</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex post-entry">
+                    <div class="custom-thumbnail">
+                      <img src="images/heroChast.jfif" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="post-content">
+                      <h3>Hero(feat.Christina Perri)</h3>
+                      <div class="post-meta">Cash Cash,Christina Perri</div>
+                    </div>
+                  </div>
+                </div>
+                  
+                      <!-- Footer -->
+                      <div style="position: fixed; z-index: 10000;">
+                        <div class="container-fluid fixed-bottom bg-dark">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="media">
+                                <img src="images/shawnmendes.jfif" style="width:64px;height:64px" class="align-self-center mr-3" alt="...">
+                                <div class="media-body text-white">
+                                  <h5 class="mt-3">Shawn Mendes - Imagination (Official Audio)</h5>
+                                  <p>Shawn Mendes</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <audio controls style="margin-top: 37px;margin-left: -80px;">
+                                <source src="Imagination.mp3" type="Audio/mp3">
+                            </audio>
+                            </div>
+                            <div class="col-3 text-white d-inline-flex flex-row-reverse align-items-center">
+                              <div class="ml-3 "> <i class="material-icons">open_in_full</i> </div>
+                              <div class="ml-3"> <i class="material-icons">queue_music</i> </div>      
+                              <div class="ml-3"> <i class="material-icons">playlist_play</i> </div>
+                                  
+                            </div>
+                          </div>
+                        </div>   
+                      </div>  
+          </div>
+        </div>
+      </div>  
+    </main>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

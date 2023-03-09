@@ -1,0 +1,98 @@
+
+
+<html>
+    <meta charset='UTF-8'/>
+    <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+    <link href="https://haii.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+      
+    <script src="https://kit.fontawesome.com/7068afb220.js" crossorigin="anonymous"></script>
+    <head>
+    <style>
+    a, button,input[type=submit],input[type=reset] {
+        font-family: sans-serif;
+        font-size: 12px;
+        background:#D18CE0;
+        color: white;
+        border: white 2px solid;
+        border-radius: 12px;
+        padding: 10px 10px;
+        margin-top: 1px;
+    }
+    a { 
+        text-decoration: none;
+    }
+    ahover, button:hover, input[type=submit]:hover, input[type=reset]:hover{
+        opacity:0.9;
+    }
+    </style>
+    <!-- Judul untuk Browser -->
+    <title>🍒For you <3</title>
+    </head>
+    
+    <body>
+    <style>
+    </style>
+    <!-- Wallpaper --><style>body{background-image: url("images/wall.jpg");background-color:#1e1e1e}</style>
+    <h1>🍒For you <3</h1>
+    <p style="opacity:.8;color:#ffffff;margin-top:12px;">@m_irzadwipahlevi2 || Swipee>>></p>
+    
+    <audio id="myAudio" src="hbd.mp3" type="audio/mpeg" preload="auto"></audio>
+    
+    <a onClick="togglePlay()"><button>Play Music</button></a>
+    
+    <script type="text/javascript">
+     var myAudio = document.getElementById("myAudio");
+    var isPlaying = false;
+    
+    function togglePlay() {
+      if (isPlaying) {
+        myAudio.pause()
+      } else {
+        myAudio.play();
+      }
+    };
+    myAudio.onplaying = function() {
+      isPlaying = true;
+    };
+    myAudio.onpause = function() {
+      isPlaying = false;
+    };
+    </script>
+    
+    <!--[ Ucapan ]-->
+    <div class='scrollImage'>
+      <p><img style="margin-right:10px;" alt="Love You" src="https://c.tenor.com/a_vmUQ-vEAEAAAAi/cute-bear.gif" height="100" />
+      Haiiii</p>
+      <P>M. Irza Dwi Pahlevi</P>
+      <p>XI RPL 7<br>nt nt <p><img style="margin-left:10px;"alt="coba"scr="https://c.tenor.com/WWiCzxfs-P8AAAAi/tkthao219-bubududu.gif"height="100" />
+      <p>Halo&nbsp;<span id="wrnRed"> hehe</span></p>
+      <p>Telkom School<img style="margin-left:10px;" alt="Pentol" src="https://i.pinimg.com/originals/bf/c8/d1/bfc8d156c25dc77ceefaed3c851a99e8.gif" height="70" /></p> 
+    
+      <p>Klik&nbsp;<span id="wrnRed">LOVE</span>-nya~<img style="margin-left:10px;" alt="Pentol" src="https://i.pinimg.com/originals/95/96/d3/9596d3118ddd5c600806a44da90c4863.gif" height="70" /></p>
+       
+    </div>
+      
+     
+    <!-- Ini adalah Tombolnya -->
+    <div style="display:flex; align-items:center; justify-content:center;">
+    <label class='lovein' onClick="f1()"><i class="fas fa-heart" style="font-size:25px; color:#f55c8d"></i></label>
+    </div>
+    <!-- Ini JS agar Tombolnya berjalan sesuai perintah -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+    flag=1
+    function f1(){
+    swal({
+      title: "M. Irza Dwi Pahlevi",
+      text: "we love u 💝",
+      icon: "ana4.jpeg", //ini nanti ubah fotonya
+      
+    })
+    
+    }
+    </script>
+    </body>
+    </html>

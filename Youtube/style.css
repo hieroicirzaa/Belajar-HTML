@@ -1,0 +1,22 @@
+.container{
+    display: flex;  
+    margin-left: 20px;
+    
+}
+a, input[type=submit],input[type=reset] {
+    font-family: sans-serif;
+    font-size: 15px;
+    background: #ebebeb;
+    color: rgb(0, 0, 0);
+    border: rgb(70, 70, 70) 1px solid;
+    border-radius: 100px;
+    padding: 6px 15px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+a {
+    text-decoration: none;
+}
+a:hover,  input[type=submit]:hover, input[type=reset]:hover{
+    opacity:0.9;
+}
